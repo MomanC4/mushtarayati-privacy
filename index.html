@@ -44,7 +44,7 @@
   <li>الفئات الخاصة، والميزانية الشهرية.</li>
   <li>أسماء وأرقام هواتف من تدفع لهم، إن اخترت حفظهم كمستلمين.</li>
   <li>رمز قفل التطبيق: لا يُحفظ الرمز نفسه، بل بصمة مشفّرة منه (SHA-256 مع قيمة عشوائية).</li>
-  <li>الرقم السري لمحفظتك الإلكترونية، إن اخترت حفظه: يُحفظ مشفّراً بمفتاح في Android Keystore على هاتفك، ولا يغادر الجهاز.</li>
+  <li>الرقم السري لمحفظتك الإلكترونية، إن اخترت حفظه: يُحفظ مشفّراً بمفتاح في Android Keystore على هاتفك، ويُستخدم فقط ضمن كود الدفع الذي تطلب تنفيذه.</li>
 </ul>
 
 <h3>إشعارات المحافظ (اختياري)</h3>
@@ -54,14 +54,6 @@
   <li>إشعارات رسائل التأكيد النصية التي يرد فيها اسم إحدى المحفظتين.</li>
 </ul>
 <p>الغرض الوحيد هو تسجيل عملية الدفع (المبلغ، الجهة، رقم المرجع، ونص الإشعار) في سجلك تلقائياً. كل إشعار آخر يُتجاهل ولا يُحفظ. نصوص هذه الإشعارات تبقى على هاتفك.</p>
-
-<h3>خدمة إمكانية الوصول (اختياري)</h3>
-<p>إذا فعّلت خدمة «مشترياتي — الرقم السري للمحفظة» من إعدادات إمكانية الوصول، فإنها:</p>
-<ul>
-  <li>تقرأ نافذة أكواد الشبكة (USSD) التابعة لخدمة الهاتف وحدها، ولمدة قصيرة (نحو 90 ثانية) بعد عملية دفع تبدؤها أنت من داخل التطبيق.</li>
-  <li>تكتب الرقم السري المحفوظ عندما تطلبه الشبكة في تلك النافذة، وتحفظ نص ردّ الشبكة مع العملية في سجلك.</li>
-</ul>
-<p>الخدمة لا تقرأ أي تطبيق أو نافذة أخرى، ولا تجمع ما تكتبه في أي مكان آخر، ولا ترسل شيئاً خارج هاتفك. الميزة اختيارية، وبدونها تكتب الرقم السري بنفسك.</p>
 
 <h3>أذونات الهاتف</h3>
 <ul>
@@ -93,7 +85,7 @@
   <li>يمكنك حذف أي سجل من القائمة، أو حذف كل المشتريات من «الإعدادات ← البيانات».</li>
   <li>يمكنك حذف الرقم السري المحفوظ للمحفظة من شاشة «المحافظ».</li>
   <li>إلغاء تثبيت التطبيق، أو «محو البيانات» من إعدادات أندرويد، يحذف كل شيء نهائياً.</li>
-  <li>يمكنك سحب إذن الإشعارات وإيقاف خدمة إمكانية الوصول في أي وقت من إعدادات أندرويد.</li>
+  <li>يمكنك سحب إذن الإشعارات في أي وقت من إعدادات أندرويد.</li>
 </ul>
 <p>بما أن المطوّر لا يحتفظ بأي نسخة من بياناتك، فلا يوجد لديه ما يحذفه أو يسلّمه.</p>
 
@@ -128,7 +120,7 @@
   <li>Custom categories and your monthly budget.</li>
   <li>Names and phone numbers of people you pay, if you choose to save them as recipients.</li>
   <li>App lock PIN: the PIN itself is not stored, only a salted SHA-256 hash of it.</li>
-  <li>Your e-wallet PIN, if you choose to save it: stored encrypted with a key in the Android Keystore on your phone. It never leaves the device.</li>
+  <li>Your e-wallet PIN, if you choose to save it: stored encrypted with a key in the Android Keystore on your phone, and used only inside the payment code you ask the app to run.</li>
 </ul>
 
 <h3>Wallet notifications (optional)</h3>
@@ -138,14 +130,6 @@
   <li>Notifications of confirmation SMS messages that mention one of those wallets.</li>
 </ul>
 <p>The only purpose is to record the payment (amount, counterparty, reference number and notification text) in your log automatically. Every other notification is ignored and not stored. The text of these notifications stays on your phone.</p>
-
-<h3>Accessibility service (optional)</h3>
-<p>If you enable the “Mushtarayati — wallet PIN” service in Accessibility settings, it:</p>
-<ul>
-  <li>Reads only the phone service’s network-code (USSD) dialog, and only for a short time (about 90 seconds) after a payment that you start from inside the app.</li>
-  <li>Enters your saved PIN when the network asks for it in that dialog, and saves the network’s reply text with the transaction in your log.</li>
-</ul>
-<p>The service does not read any other app or window, does not collect what you type anywhere else, and sends nothing off your phone. The feature is optional; without it you type the PIN yourself.</p>
 
 <h3>Phone permissions</h3>
 <ul>
@@ -177,7 +161,7 @@
   <li>You can delete any record from the list, or delete all purchases from “Settings → Data”.</li>
   <li>You can delete the saved wallet PIN from the “Wallets” screen.</li>
   <li>Uninstalling the app, or using “Clear data” in Android settings, deletes everything permanently.</li>
-  <li>You can revoke notification access and turn off the accessibility service at any time in Android settings.</li>
+  <li>You can revoke notification access at any time in Android settings.</li>
 </ul>
 <p>Because the developer holds no copy of your data, there is nothing for the developer to delete or hand over.</p>
 
