@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>سياسة الخصوصية — مشترياتي</title>
+<style>
+  :root { --ink: #0b2440; --muted: #5b6b7d; --line: #e4e9f0; --brand: #12355b; --accent: #0e7c86; --bg: #f5f7fa; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font-family: "Segoe UI", Tahoma, "Noto Sans Arabic", Arial, sans-serif; line-height: 1.9; }
+  main { max-width: 780px; margin: 0 auto; padding: 32px 16px 64px; }
+  header { border-bottom: 2px solid var(--brand); padding-bottom: 16px; margin-bottom: 24px; }
+  h1 { margin: 0 0 4px; font-size: 1.7rem; color: var(--brand); }
+  h2 { margin: 32px 0 8px; font-size: 1.2rem; color: var(--brand); }
+  h3 { margin: 20px 0 4px; font-size: 1.02rem; color: var(--accent); }
+  p, li { font-size: 1rem; }
+  ul { padding-inline-start: 22px; margin: 6px 0; }
+  .meta { color: var(--muted); font-size: .92rem; margin: 0; }
+  .box { background: #fff; border: 1px solid var(--line); border-radius: 14px; padding: 14px 18px; margin: 16px 0; }
+  .lang { margin-top: 56px; padding-top: 24px; border-top: 2px solid var(--line); }
+  a { color: var(--accent); }
+  code { direction: ltr; unicode-bidi: embed; background: #eef1f5; padding: 1px 6px; border-radius: 6px; font-size: .9em; }
+</style>
+</head>
+<body>
+<main>
+
+<header>
+  <h1>سياسة الخصوصية — تطبيق «مشترياتي»</h1>
+  <p class="meta">اسم الحزمة: <code>app.mushtarayati</code> • آخر تحديث: 10 أكتوبر 2026</p>
+  <p class="meta"><a href="#english">English version below</a></p>
+</header>
+
+<div class="box">
+  <strong>الخلاصة:</strong> «مشترياتي» تطبيق لتسجيل المشتريات ومتابعة المصروف. كل بياناتك تبقى على هاتفك.
+  التطبيق لا يملك خوادم، ولا يرسل بياناتك إلى المطوّر ولا إلى أي جهة أخرى، ولا يحتوي إعلانات ولا أدوات تتبّع أو تحليلات.
+</div>
+
+<h2>1. البيانات التي يتعامل معها التطبيق</h2>
+
+<h3>بيانات تُدخلها أنت</h3>
+<ul>
+  <li>سجلات المشتريات: الاسم، الفئة، السعر، التاريخ، والملاحظات.</li>
+  <li>الفئات الخاصة، والميزانية الشهرية.</li>
+  <li>أسماء وأرقام هواتف من تدفع لهم، إن اخترت حفظهم كمستلمين.</li>
+  <li>رمز قفل التطبيق: لا يُحفظ الرمز نفسه، بل بصمة مشفّرة منه (SHA-256 مع قيمة عشوائية).</li>
+  <li>الرقم السري لمحفظتك الإلكترونية، إن اخترت حفظه: يُحفظ مشفّراً بمفتاح في Android Keystore على هاتفك، ولا يغادر الجهاز.</li>
+</ul>
+
+<h3>إشعارات المحافظ (اختياري)</h3>
+<p>إذا منحت التطبيق إذن «الوصول إلى الإشعارات»، فإنه يقرأ:</p>
+<ul>
+  <li>إشعارات تطبيقَي المحفظتين «بال باي (محفظتي)» و«جوال باي» فقط.</li>
+  <li>إشعارات رسائل التأكيد النصية التي يرد فيها اسم إحدى المحفظتين.</li>
+</ul>
+<p>الغرض الوحيد هو تسجيل عملية الدفع (المبلغ، الجهة، رقم المرجع، ونص الإشعار) في سجلك تلقائياً. كل إشعار آخر يُتجاهل ولا يُحفظ. نصوص هذه الإشعارات تبقى على هاتفك.</p>
+
+<h3>خدمة إمكانية الوصول (اختياري)</h3>
+<p>إذا فعّلت خدمة «مشترياتي — الرقم السري للمحفظة» من إعدادات إمكانية الوصول، فإنها:</p>
+<ul>
+  <li>تقرأ نافذة أكواد الشبكة (USSD) التابعة لخدمة الهاتف وحدها، ولمدة قصيرة (نحو 90 ثانية) بعد عملية دفع تبدؤها أنت من داخل التطبيق.</li>
+  <li>تكتب الرقم السري المحفوظ عندما تطلبه الشبكة في تلك النافذة، وتحفظ نص ردّ الشبكة مع العملية في سجلك.</li>
+</ul>
+<p>الخدمة لا تقرأ أي تطبيق أو نافذة أخرى، ولا تجمع ما تكتبه في أي مكان آخر، ولا ترسل شيئاً خارج هاتفك. الميزة اختيارية، وبدونها تكتب الرقم السري بنفسك.</p>
+
+<h3>أذونات الهاتف</h3>
+<ul>
+  <li><strong>إجراء المكالمات (CALL_PHONE):</strong> لتنفيذ كود USSD الخاص بالدفع أو فحص الرصيد عندما تطلب ذلك أنت. التطبيق لا يُجري أي اتصال من تلقاء نفسه.</li>
+  <li><strong>حالة الهاتف (READ_PHONE_STATE):</strong> لعرض شرائح الاتصال في هاتفك كي تختار الشريحة التي يُنفَّذ الكود عبرها. لا يقرأ التطبيق سجل المكالمات ولا جهات الاتصال ولا الرسائل.</li>
+</ul>
+
+<h2>2. كيف تُستخدم البيانات</h2>
+<p>تُستخدم البيانات داخل التطبيق فقط: لعرض سجل مشترياتك، وحساب الإجماليات والميزانية والرسوم البيانية، وإنشاء كشوف PDF، وتنفيذ عمليات الدفع التي تطلبها.</p>
+
+<h2>3. مشاركة البيانات</h2>
+<p>التطبيق لا يشارك بياناتك مع أي جهة: لا مع المطوّر، ولا مع معلنين، ولا مع خدمات تحليلات، ولا مع أي طرف ثالث.</p>
+<p>الحالات الوحيدة التي تغادر فيها بيانات هاتفك هي ما تفعله أنت بنفسك:</p>
+<ul>
+  <li>عند تنفيذ كود USSD يُرسَل الكود (وفيه رقم المستلم والمبلغ، والرقم السري إن كان جزءاً من الكود) إلى شبكة الاتصالات ومزوّد المحفظة، تماماً كما لو كتبته يدوياً في لوحة الاتصال.</li>
+  <li>عند مشاركة كشف PDF أو حفظ نسخة احتياطية، يذهب الملف إلى المكان أو التطبيق الذي تختاره أنت.</li>
+</ul>
+
+<h2>4. التخزين والحماية</h2>
+<ul>
+  <li>تُخزَّن البيانات في مساحة التطبيق الخاصة على هاتفك، ولا تصل إليها التطبيقات الأخرى.</li>
+  <li>الرقم السري للمحفظة مشفّر بمفتاح في Android Keystore، ورمز القفل محفوظ كبصمة لا كنص.</li>
+  <li>ملف النسخة الاحتياطية الذي تنشئه غير مشفّر، ولا يحتوي رمز القفل ولا الرقم السري للمحفظة. احفظه في مكان آمن.</li>
+</ul>
+
+<h2>5. الاحتفاظ بالبيانات وحذفها</h2>
+<ul>
+  <li>تبقى بياناتك على هاتفك ما دام التطبيق مثبّتاً.</li>
+  <li>يمكنك حذف أي سجل من القائمة، أو حذف كل المشتريات من «الإعدادات ← البيانات».</li>
+  <li>يمكنك حذف الرقم السري المحفوظ للمحفظة من شاشة «المحافظ».</li>
+  <li>إلغاء تثبيت التطبيق، أو «محو البيانات» من إعدادات أندرويد، يحذف كل شيء نهائياً.</li>
+  <li>يمكنك سحب إذن الإشعارات وإيقاف خدمة إمكانية الوصول في أي وقت من إعدادات أندرويد.</li>
+</ul>
+<p>بما أن المطوّر لا يحتفظ بأي نسخة من بياناتك، فلا يوجد لديه ما يحذفه أو يسلّمه.</p>
+
+<h2>6. الأطفال</h2>
+<p>التطبيق غير موجّه للأطفال دون 13 عاماً، ولا يجمع بيانات عنهم.</p>
+
+<h2>7. علاقة التطبيق بالمحافظ</h2>
+<p>«مشترياتي» تطبيق مستقل، غير تابع لشركة PalPay ولا لشركة جوال ولا لأي مزوّد محفظة، ولا يحمل تفويضاً منها. عمليات الدفع تتم عبر خدمات هذه الشركات وتخضع لشروطها وسياساتها.</p>
+
+<h2>8. تغييرات هذه السياسة</h2>
+<p>أي تعديل يُنشر في هذه الصفحة مع تحديث التاريخ أعلاها.</p>
+
+<h2>9. التواصل</h2>
+<p>للاستفسار عن الخصوصية: <a href="mailto:momanalhadidi@gmail.com">momanalhadidi@gmail.com</a></p>
+
+<!-- ============================== English ============================== -->
+<section class="lang" id="english" lang="en" dir="ltr">
+
+<h1>Privacy Policy — “Mushtarayati” app</h1>
+<p class="meta">Package name: <code>app.mushtarayati</code> • Last updated: 10 October 2026</p>
+
+<div class="box">
+  <strong>Summary:</strong> Mushtarayati is an app for recording purchases and tracking spending. All your data stays on your phone.
+  The app has no servers, sends no data to the developer or to anyone else, and contains no ads, trackers or analytics.
+</div>
+
+<h2>1. Data the app handles</h2>
+
+<h3>Data you enter</h3>
+<ul>
+  <li>Purchase records: name, category, price, date and notes.</li>
+  <li>Custom categories and your monthly budget.</li>
+  <li>Names and phone numbers of people you pay, if you choose to save them as recipients.</li>
+  <li>App lock PIN: the PIN itself is not stored, only a salted SHA-256 hash of it.</li>
+  <li>Your e-wallet PIN, if you choose to save it: stored encrypted with a key in the Android Keystore on your phone. It never leaves the device.</li>
+</ul>
+
+<h3>Wallet notifications (optional)</h3>
+<p>If you grant “Notification access”, the app reads:</p>
+<ul>
+  <li>Notifications from the two wallet apps “PalPay (Mahfazati)” and “Jawwal Pay” only.</li>
+  <li>Notifications of confirmation SMS messages that mention one of those wallets.</li>
+</ul>
+<p>The only purpose is to record the payment (amount, counterparty, reference number and notification text) in your log automatically. Every other notification is ignored and not stored. The text of these notifications stays on your phone.</p>
+
+<h3>Accessibility service (optional)</h3>
+<p>If you enable the “Mushtarayati — wallet PIN” service in Accessibility settings, it:</p>
+<ul>
+  <li>Reads only the phone service’s network-code (USSD) dialog, and only for a short time (about 90 seconds) after a payment that you start from inside the app.</li>
+  <li>Enters your saved PIN when the network asks for it in that dialog, and saves the network’s reply text with the transaction in your log.</li>
+</ul>
+<p>The service does not read any other app or window, does not collect what you type anywhere else, and sends nothing off your phone. The feature is optional; without it you type the PIN yourself.</p>
+
+<h3>Phone permissions</h3>
+<ul>
+  <li><strong>Make phone calls (CALL_PHONE):</strong> to run the USSD code for a payment or a balance check when you ask for it. The app never places a call on its own.</li>
+  <li><strong>Phone state (READ_PHONE_STATE):</strong> to list the SIM cards in your phone so you can choose which one runs the code. The app does not read your call log, contacts or messages.</li>
+</ul>
+
+<h2>2. How the data is used</h2>
+<p>Data is used only inside the app: to show your purchase log, calculate totals, budget and charts, generate PDF statements, and carry out the payments you request.</p>
+
+<h2>3. Data sharing</h2>
+<p>The app does not share your data with anyone: not the developer, advertisers, analytics services or any third party.</p>
+<p>Data leaves your phone only through actions you take yourself:</p>
+<ul>
+  <li>When a USSD code is run, the code (containing the recipient number and amount, and the PIN if it is part of the code) is sent to the mobile network and the wallet provider, exactly as if you had typed it in the dialer.</li>
+  <li>When you share a PDF statement or save a backup, the file goes to the location or app that you choose.</li>
+</ul>
+
+<h2>4. Storage and security</h2>
+<ul>
+  <li>Data is stored in the app’s private storage on your phone and is not accessible to other apps.</li>
+  <li>The wallet PIN is encrypted with an Android Keystore key, and the app lock PIN is stored as a hash, not as text.</li>
+  <li>The backup file you create is not encrypted and contains neither the app lock PIN nor the wallet PIN. Keep it somewhere safe.</li>
+</ul>
+
+<h2>5. Retention and deletion</h2>
+<ul>
+  <li>Your data stays on your phone for as long as the app is installed.</li>
+  <li>You can delete any record from the list, or delete all purchases from “Settings → Data”.</li>
+  <li>You can delete the saved wallet PIN from the “Wallets” screen.</li>
+  <li>Uninstalling the app, or using “Clear data” in Android settings, deletes everything permanently.</li>
+  <li>You can revoke notification access and turn off the accessibility service at any time in Android settings.</li>
+</ul>
+<p>Because the developer holds no copy of your data, there is nothing for the developer to delete or hand over.</p>
+
+<h2>6. Children</h2>
+<p>The app is not directed at children under 13 and does not collect data about them.</p>
+
+<h2>7. Relationship to the wallets</h2>
+<p>Mushtarayati is an independent app. It is not affiliated with, endorsed by or authorised by PalPay, Jawwal or any wallet provider. Payments are carried out through those companies’ services and are subject to their terms and policies.</p>
+
+<h2>8. Changes to this policy</h2>
+<p>Any change will be published on this page with an updated date at the top.</p>
+
+<h2>9. Contact</h2>
+<p>For privacy questions: <a href="mailto:momanalhadidi@gmail.com">momanalhadidi@gmail.com</a></p>
+
+</section>
+</main>
+</body>
+</html>
